@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+
+    .cart {
+        width: 80px;
+        height: 80px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+        border-radius: 50%;
+        position: fixed;
+        bottom: 5%; right: 3%;
+        background: #fff;
+        transition: .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            width: 40%;
+            height: 40%;
+        }
+        &.active {
+            width: 400px;
+            height: 85%;
+            border-radius: 10px;
+
+            p {
+                display: none;
+            }
+            
+        }
+    }
+}
