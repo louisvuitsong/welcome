@@ -1,0 +1,27 @@
+@import url(common.css);
+
+@media (min-width: 768px) {
+    @import 'header';
+    
+    main {
+        padding-top: 3%;
+
+        @import 'category';
+        @import 'about';
+        @import 'portfolio';
+    }
+    @import 'footer';
+}
+
+@media (max-width: 480px) {
+    @import 'header480';
+    main{
+        padding-top: 7vh;
+    }
+    @import 'category480';
+    @import 'about480';
+    @import 'portfolio480';
+    @import 'footer480';
+
+}
+
