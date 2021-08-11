@@ -1,0 +1,225 @@
+.welcome_select, .welcome_recommand {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+    padding: 5% 0;
+
+    &.active {
+        display: block;
+    }
+
+    >section {
+        margin-bottom: 10%;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+  
+    .package, .theme_select {
+        padding: 0 15%;
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10%;
+            
+            .package_nav, .theme_nav {
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                padding-left: 3%;
+                border-right: 1px solid #aaa;
+                
+                a {
+                    font-size: 1.5rem;
+                    margin-bottom: 30%;
+    
+                    &.active {
+                        &::after {
+                            content: "-->";
+                        }
+                    }
+                }
+            }
+    
+            .theme_list {
+                display: flex;
+                justify-content: space-between;
+                width: 70%;
+                
+                .theme {
+                    display: none;
+    
+                    &.active {
+                        display: block;
+                    }
+                    .theme_main {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-bottom: 10%;
+    
+                        .theme_img {
+                            width: 55%;
+                        }
+                        .theme_detail {
+                            width: 40%;
+                            .package_title {
+                                font-size: 2rem;
+                                font-weight: bold;
+                                text-align: center;
+                                margin-bottom: 10%;
+                                
+                            }
+    
+                            div {
+                                padding-left: 5%;
+    
+                                p {
+                                    color: #555;
+                                }
+                            }
+                            
+                        }
+    
+                    }
+                    .package_subtitle {
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                    .item_list {
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: 5% 0;
+
+                        .item_card{
+                            width: 25%;
+                            transition: .1s;
+                            margin-bottom: 3%;
+                            
+                            &.active {
+                                border: 5px solid hotpink;
+                            }
+                            .item_info{
+                                width: 100%; height: 100%;
+                
+                                .item_img {
+                                    width: 100%;
+                                }
+                                .item_detail {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+            
+                                    div {
+                                        width: 100%;
+                                        p {
+                                            &:nth-of-type(1) {
+                                                font-size: 0.8em;
+                                            }
+                                        }
+                                    }
+                                    .item_more_btn {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+            
+                                        width: 100px;
+                                        height: 30px;
+            
+                                        border: 1px solid #000;
+            
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+
+    .welcome_product, .add_item {
+        width: 100%;
+        padding: 5% 15%;
+        background: #eee;
+        overflow: hidden;
+
+        h3 {
+            font-size: 1.5rem;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 5%;
+        }
+        .product_slide_wrapper {
+            width: 100%;
+
+            .item_list {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-bottom: 5%;
+                
+                .item_card{
+                    width: 23%;
+                    transition: .1s;
+                    margin-bottom: 3%;
+                    flex: 0 0 auto;
+    
+                    &.active {
+                        border: 5px solid hotpink;
+                    }
+                    .item_info{
+                        width: 100%; height: 100%;
+        
+                        .item_img {
+                            width: 100%;
+                        }
+                        .item_detail {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+    
+                            div {
+                                width: 100%;
+                                p {
+                                    &:nth-of-type(1) {
+                                        font-size: 0.8em;
+                                    }
+                                }
+                            }
+                            .item_more_btn {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+    
+                                width: 100px;
+                                height: 30px;
+    
+                                border: 1px solid #000;
+    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        
+    }
+
+    .inquire {
+        width: 100%;
+        padding: 0 15%;
+    }
+}
+
+
+
