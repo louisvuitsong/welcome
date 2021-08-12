@@ -1,0 +1,139 @@
+.cart_btn {
+    width: 150px;
+    height: 60px;
+    // box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    position: fixed;
+    bottom: 3%; right: 3%;
+    background: #eee;
+    border: 2px solid #777;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+    color: #777;
+
+    .cart_icon {
+        // width: 40px;
+        // height: 40px;
+        font-size: 1rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 20%;
+        }
+    }
+    &:hover {
+        background: #fff;
+        border: 2px solid #000;
+
+        .cart_icon {
+            color: #333;
+        }
+    }
+}
+
+.cart {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.6);
+
+    &.active {
+
+        display: flex;
+
+        .cart_back {
+            display: flex;
+            flex-direction: column;
+            justify-content: inherit;
+            align-items: inherit;
+            border-radius: 0;
+            padding: 3% 5%;
+    
+    
+            h3 {
+                display: block;
+    
+            }
+            .cart_title {
+                display: block;
+            }
+            .cart_icon {
+                display: none;
+            }
+            .cart_list {
+                display: block;
+            }
+        }
+       
+    }
+
+    .cart_back {
+        width: 80%;
+        height: 90vh;
+        background-color: #eeee;
+        overflow: hidden;
+
+
+        h3{
+            display: none;
+            width: 100%;
+            font-size: 2rem;
+            text-align: center;
+            color: #333
+        }
+        >article {
+            display: flex;
+            justify-content: space-around;
+            // align-items: center;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+    
+            .composition {
+                width: 45%;
+                border-right: 1px solid #333;
+            
+                .cart_title {
+                    text-align: left;
+                    font-size: 1.5rem;
+                    font-weight: normal;
+                }
+                .cart_list {
+                    // display: none;
+                    height: 60%;
+            
+                    li {
+                        // margin-bottom: 5%;
+            
+                        .item_info {
+                            display: flex;
+                            justify-content: space-between;
+                            border-top: 1px solid #ccc;
+            
+                            .item_img {
+                                width:20%;
+                            }
+                        }
+                    }
+                }
+            }
+            .inquire_input {
+                width: 45%;
+    
+            }
+        }
+    }
+
+   
+   
+}
