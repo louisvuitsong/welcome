@@ -1,0 +1,62 @@
+.welcome_portfolio {
+    width: 100%;
+    padding: 20% 0 10% 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // background: #eee;
+
+    h2 {
+        font-size: 2rem;
+        color: #333;
+        text-align: center;
+        margin-bottom: 5%;
+        font-weight: bold;
+    }
+    .portfolio_slide {
+        width: 100%; 
+        display: flex;
+        height: auto;
+        padding-left: 5%;
+
+        .portfolio_card {
+            flex: 0 0 auto;
+            width: 25%;
+            height: 60vh;
+            margin: 0 5% 0 0;
+            border-radius: 20px;
+
+            figure {
+                width: 100%; height: 100%;
+                position: relative;
+
+                > p {
+                    width: 100%; height: 75%;
+                    
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                figcaption {
+                    position: absolute;
+                    left: 0; bottom: 0;
+                    width: 100%; height: 25%;
+                    color: #333;
+                    padding: 5%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    h6 {
+                        font-size: 1.5rem;
+                }
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
