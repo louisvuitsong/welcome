@@ -1,0 +1,117 @@
+.cart_btn {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0; left: 0;
+    background: #111;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+    color: #fff;
+
+    &.active {
+        // background: #fff;
+        .cart_title {
+            display: none;
+        }
+        .cart_icon {
+            display: block;
+        }
+    }
+    .cart_title {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .cart_icon {
+        display: none;
+       
+        width: 30px;
+    }
+}
+
+.cart {
+    border-top: 3px solid #111;
+    position: fixed;
+    bottom: -130%; left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background: #fff;
+    transition: .5s;
+    padding: 0 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+
+    &.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: inherit;
+
+        bottom: -40%;
+
+        article {
+            display: block;
+        }
+        .cart_title {
+            display: block;
+        }
+        .cart_list {
+            display: block;
+        }
+        .order {
+            display: block;
+        }
+    }
+
+    .cart_back {
+        overflow: auto;
+
+        h3 {
+            width: 100%;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 5% 0 15% 0;
+        }
+        >article {
+            .composition {
+                width: 100%;
+            
+                .cart_title {
+                    text-align: left;
+                    font-size: 1.25rem;
+                    font-weight: normal;
+                    padding-bottom: 5%;
+                    width: 100%;
+                    text-align: center;
+                    border-bottom: 1px solid #111;
+                }
+                .cart_list {
+                    padding-top: 5%;
+            
+                    li {
+                        // margin-bottom: 5%;
+            
+                        .item_info {
+                            display: flex;
+                            border-top: 1px solid #ccc;
+            
+                            .item_img {
+                                width:20%;
+                            }
+                        }
+                    }
+                }
+            }
+            .inquire_input {
+                width: 45%;
+                padding-bottom: 30%;
+                h3 {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    
+    }
+}
