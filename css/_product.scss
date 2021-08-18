@@ -1,0 +1,542 @@
+.config_main {
+    background: #eee;
+    padding: 5% 0 3% 0;
+
+    h2 {
+        font-size: 8rem;
+        text-align: center;
+        font-family: 'DM Serif Display', serif;
+        color: #333;
+    }
+    >p {
+        width: 100%;
+        text-align: center;
+        color: #777;
+    }
+    .config_nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 3% 0;
+        padding: 0 20%;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            height: 60px;
+            color: #777;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: .3s;
+            background: #fff;
+            border: 1px solid #333;
+
+            &.active {
+                color: #111;
+                font-size: 1.25rem;
+            }
+
+            &.active {
+                color: #111;
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
+
+
+.welcome_select, .welcome_recommand {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+    padding: 5% 0;
+
+    &.active {
+        display: block;
+    }
+
+    >section {
+        margin-bottom: 10%;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+  
+    .package_select, .theme_select {
+        padding: 0 15%;
+        min-height: 100vh;
+        >p {
+            color: #555;
+            padding: 1% 0 0 3%;
+        }
+        article {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10%;
+            
+            .package_nav, .theme_nav {
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                padding-left: 3%;
+                border-right: 1px solid #aaa;
+                
+                a {
+                    font-size: 1.25rem;
+                    margin-bottom: 20%;
+                    color: #777;
+                    transition: .5s;
+
+                    &.active {
+                        color:#111;
+                    }
+                }
+            }
+    
+            .theme_list {
+                display: flex;
+                justify-content: space-between;
+                width: 70%;
+                
+                .package, .theme {
+                    display: none;
+    
+                    &.active {
+                        display: block;
+                    }
+                    .theme_main {
+                        width: 100%;
+                        height: 250px;
+
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 10%;
+    
+                        .theme_img {
+                            width: 55%;
+                            height: 240px;
+                            overflow: hidden;
+                        }
+                        .theme_detail {
+                            width: 40%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+
+                            .package_title {
+                                font-size: 2rem;
+                                font-weight: bold;
+                                text-align: center;
+                                margin: 5% 0;
+                                color: #111;
+                            }
+    
+                            div {
+                                padding-left: 5%;
+    
+                                p {
+                                    color: #333;
+                                    line-height: 1.5;
+                                }
+                               
+                            }
+                            a {
+                                
+                                text-align: center;
+                                background: #fff;
+                                border: 1px solid #333;
+                                cursor: pointer;
+                                padding: 3%;
+
+                                &:hover {
+                                    background: #111;
+                                    color: #fff;
+                                }
+                            }
+                            
+                        }
+                     
+    
+                    }
+                    .budget_btn {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        position: relative;
+
+                        
+
+                        a {
+                            width: 25%;
+                            text-align: center;
+                            padding: 3%;
+                            background: #111;
+                            margin-left: 3%;
+
+                          
+                            background: #111;
+                            color: #fff;
+                            display: flex;
+                            align-items: center;
+
+                            &::after {
+                                display: block;
+                                content: '';
+                                position: absolute;
+                                background: url('../src/img/icon/circlecheck.png') center center / cover;
+                                top: 25%; right: 10px;
+                                width: 30px;
+                                height: 30px;
+                            }
+
+                        }
+                    }
+                    .compose {
+                 
+
+                        .package_subtitle {
+                            font-size: 1.5rem;
+                            font-weight: bold;
+                            text-align: center;
+                            color:#555;
+                        }
+                        .budget_item_list {
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: flex-start;
+                            padding: 5% 0;
+
+                            .item_card{
+                                flex: 0 0 23%;
+                                width: 23%;
+                                transition: .1s;
+                                margin: 0 2% 10% 0;
+                                position: relative;
+
+                                &.active {
+                                    &::after {
+                                        content: '';
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        background: url('../src/img/icon/itemcheck.png') center center no-repeat rgba(0, 0, 0, 0.4);
+                                        z-index: 10;
+                                    }
+                                }
+                                .item_info{
+                                    width: 100%; height: 100%;
+                    
+                                    .item_img {
+                                        width: 100%;
+                                        background: #eee;
+                                    }
+                                    .item_detail {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                
+                                        div {
+                                            width: 100%;
+                                            text-align: center;
+
+                                            h4 {
+                                                margin: 10% 0 5% 0;
+                                                font-size: 1.25rem;
+                                            }
+
+                                            p {
+                                                margin-bottom: 5%;
+
+                                                &:nth-of-type(1) {
+                                                    font-size: 0.8em;
+                                                }
+                                            }
+                                        }
+                                        .item_more_btn {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                
+                                            width: 100px;
+                                            height: 30px;
+                
+                                            border: 1px solid #000;
+                
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+
+    .welcome_product, .add_item {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        padding: 5% 15%;
+        background: #eee;
+
+        &.active {
+            height: auto;
+        }
+
+        h4 {
+            color: #333;
+            margin-bottom: 7%;
+        }
+
+        .ask {
+            width: 300px;
+            margin: 10% auto;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 50px;
+                text-align: center;
+                border: 1px solid #111;
+                margin-bottom: 5%;
+                color: #111;
+                background: #fff;
+                cursor: pointer;
+
+                &:hover {
+                    color: #fff;
+                    background: #333;
+                }
+                &.active {
+                    color: #fff;
+                    background: #333;
+                }
+
+            }
+        }
+
+        .ready_btn {
+            width: 100%;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+
+            display: none;
+
+            &.active {
+                display: flex;
+            }
+            
+
+            a {
+                width: 20%;
+                text-align: center;
+                padding: 2%;
+                background: #111;
+                margin-left: 3%;
+
+              
+                background: #111;
+                color: #fff;
+                display: flex;
+                align-items: center;
+
+                &::after {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    background: url('../src/img/icon/circlecheck.png') center center / cover;
+                    top: 25%; right: 10px;
+                    width: 30px;
+                    height: 30px;
+                }
+
+            }
+        }
+
+        .item_box {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            &.item_box_recommand {
+                display: none;
+
+                &.active {
+                    display: flex;
+                }
+            }
+
+            >p {
+                padding: 1% 0 0 3%;
+                font-size: 0.8rem;
+                color: #555;
+            }
+        
+            .swiperaaa, .swiper_title {
+                width: 23%;
+                display: flex;
+                flex-direction: column;
+                padding-left: 3%;
+                border-right: 1px solid #aaa;
+
+                 
+                a {
+                    font-size: 1.25rem;
+                    margin-bottom: 20%;
+                    color: #777;
+                    transition: .5s;
+
+                    &.active {
+                        color:#111;
+                    }
+                }
+
+                background: #eee;
+
+                span {
+                    display: inline-block;
+                    width: 20%;
+                    text-align: left;
+                    background: transparent;
+                    border-radius: 0;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    
+                    
+                }
+            }
+        
+            .product_slide_wrapper {
+                width: 70%;
+
+                .item_list {
+                    width: 100%;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    margin-bottom: 5%;
+
+                    &.add_list{
+                        display: none;
+
+                        &.active {
+                            display: flex;
+                        }
+                    }
+
+                    &.select_list{
+                        display: none;
+
+                        &.active {
+                            display: flex;
+                        }
+                    }
+
+                    .item_card{
+                        flex: 0 0 23%;
+                        margin: 0 2% 7% 0;
+                        position: relative;
+
+                        &.active {
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                background: url('../src/img/icon/itemcheck.png') center center no-repeat rgba(0, 0, 0, 0.4);
+                                z-index: 10;
+                            }
+                        }
+                        
+                        .item_info{
+                            width: 100%; height: 100%;
+            
+                            .item_img {
+                                width: 100%;
+                            }
+                            .item_detail {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+        
+                                div {
+                                    width: 100%;
+                                    text-align: center;
+
+                                    h4 {
+                                        font-size: 1.25rem;
+                                        margin: 10% 0 5% 0;
+                                    }
+
+                                    p {
+                                        margin-bottom: 5%;
+
+                                        &:nth-of-type(1) {
+                                            font-size: 0.8em;
+                                        }
+                                    }
+                                }
+                                .item_more_btn {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+        
+                                    width: 100px;
+                                    height: 30px;
+        
+                                    border: 1px solid #000;
+        
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .inquire {
+        width: 100%;
+        padding: 0 15%;
+    }
+}
+
+.detail_lightbox {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; 
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+    transition: .7s;
+
+    p {
+        width: 65vw;
+    }
+    &.active {
+        display: flex;
+    }
+}
+
+
