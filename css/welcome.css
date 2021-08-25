@@ -1,0 +1,658 @@
+@import url(common/common.css);
+@media (min-width: 481px) {
+  header {
+    width: 100%;
+    height: 7vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 50;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    padding: 0 3%;
+  }
+  header .menu-trigger {
+    display: none;
+  }
+  header .logo {
+    width: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .logo img {
+    width: 100%;
+  }
+  header .cart-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  header .cart-icon img {
+    width: 100%;
+  }
+  header .menu-nav-back {
+    width: 70%;
+  }
+  header .menu-nav-back .menu-nav {
+    width: 100%;
+    height: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .menu-nav-back .menu-nav:nth-of-type(2) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background: #fff;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .menu-nav-back .menu-nav:hover:nth-of-type(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 7vh;
+    left: 0;
+  }
+  .welcome-about {
+    padding: 3% 0 10% 0;
+    width: 100%;
+    position: relative;
+  }
+  .welcome-about .welcome-title {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10% 3% 10%;
+  }
+  .welcome-about .welcome-title .welcome-title-main {
+    position: relative;
+    width: 100%;
+    height: 35vh;
+  }
+  .welcome-about .welcome-title .welcome-title-main h2 {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  .welcome-about .welcome-title .welcome-title-main .welcome-img {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+  .welcome-about .welcome-title .welcome-title-sub {
+    width: 100%;
+    padding-left: 1%;
+  }
+  .welcome-about .welcome-title .welcome-title-sub p {
+    white-space: pre-line;
+    color: #777;
+    font-size: 1rem;
+    line-height: 2;
+  }
+  .welcome-about .welcome-title .welcome-title-sub a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 20%;
+    height: 50px;
+    margin-top: 5%;
+    font-size: 1rem;
+    color: #fff;
+    background: #111;
+  }
+  .welcome-about .welcome-contents {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5% 10% 10% 10%;
+    background: #eee;
+  }
+  .welcome-about .welcome-contents h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1%;
+  }
+  .welcome-about .welcome-contents > p {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 5%;
+    color: #777;
+  }
+  .welcome-about .welcome-contents .welcome-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .welcome-about .welcome-contents .welcome-btn a {
+    display: inline-block;
+    width: 28%;
+  }
+  .welcome-about .welcome-contents .welcome-btn a:hover figure {
+    color: #fff;
+    background: #555;
+  }
+  .welcome-about .welcome-contents .welcome-btn a:hover figure > p {
+    background: #fff;
+    color: #333;
+  }
+  .welcome-about .welcome-contents .welcome-btn a figure {
+    width: 100%;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #fff;
+    color: #333;
+    border: 1px solid #333;
+  }
+  .welcome-about .welcome-contents .welcome-btn a figure > p {
+    width: 100%;
+    padding: 3%;
+    border: 1px solid #333;
+  }
+  .welcome-about .welcome-contents .welcome-btn a figure > p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+    height: 50px;
+    border: 1px solid #333;
+    margin-top: 2%;
+    background: #111;
+    color: #fff;
+  }
+  .welcome-about .welcome-contents .welcome-btn a figure figcaption {
+    width: 70%;
+    height: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .welcome-about .welcome-contents .welcome-btn a figure figcaption h4 {
+    width: 100%;
+    font-size: 2.5rem;
+    white-space: nowrap;
+  }
+  .welcome-about .welcome-contents .welcome-btn a figure figcaption .arrow {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .welcome-about .welcome-contents .welcome-btn a figure figcaption p {
+    font-size: 1rem;
+  }
+  .welcome-portfolio .portfolio-title {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1%;
+  }
+  .welcome-portfolio .portfolio-subtitle {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+    color: #777;
+  }
+  .welcome-portfolio .portfolio-list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
+    padding-left: 3%;
+  }
+  .welcome-portfolio .portfolio-list .portfolio-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 22%;
+            flex: 0 0 22%;
+    margin: 0 3% 5% 0;
+  }
+  .welcome-portfolio .portfolio-list .portfolio-card figure .portfolio-img {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .welcome-portfolio .portfolio-list .portfolio-card figure figcaption {
+    width: 100%;
+    padding-top: 5%;
+    color: #333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .welcome-portfolio .portfolio-list .portfolio-card figure figcaption p:nth-of-type(1) {
+    margin-bottom: 2%;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  .welcome-portfolio .portfolio-list .portfolio-card figure figcaption p:nth-of-type(2) {
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 5%;
+  }
+  .welcome-portfolio .portfolio-list .portfolio-card figure .portfolio-more {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 0.8rem;
+    padding: 2%;
+    border: 1px solid #333;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7vh;
+    padding: 0 2%;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 5;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  header .menu-trigger {
+    position: relative;
+    width: 20px;
+    height: 13px;
+    z-index: 30;
+  }
+  header .menu-trigger span {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    border-radius: 4px;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  header .menu-trigger span:nth-of-type(1) {
+    top: 0;
+  }
+  header .menu-trigger span:nth-of-type(2) {
+    top: 48%;
+  }
+  header .menu-trigger span:nth-of-type(3) {
+    bottom: 0;
+  }
+  header .menu-trigger.active span:nth-of-type(1) {
+    -webkit-transform: translateY(6px) rotate(-45deg);
+            transform: translateY(6px) rotate(-45deg);
+  }
+  header .menu-trigger.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  header .menu-trigger.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-6px) rotate(45deg);
+            transform: translateY(-6px) rotate(45deg);
+  }
+  header .logo {
+    width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .logo img {
+    width: 100%;
+  }
+  header .cart-icon {
+    width: 30px;
+    height: 30px;
+  }
+  header .menu-nav-back {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  header .menu-nav-back.active {
+    left: 0;
+  }
+  header .menu-nav-back .menu-nav {
+    width: 70%;
+    height: 100vh;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 25;
+    font-size: 1rem;
+  }
+  header .menu-nav-back .menu-nav a {
+    margin: 5% 0;
+  }
+  .welcome-about {
+    padding-top: 10vh;
+  }
+  .welcome-about .welcome-title {
+    padding: 0 20px;
+  }
+  .welcome-about .welcome-title .welcome-title-main {
+    position: relative;
+    width: 100%;
+    height: 45vh;
+  }
+  .welcome-about .welcome-title .welcome-title-main h2 {
+    font-size: 3rem;
+    color: #333;
+    position: absolute;
+    top: 2%;
+    left: 20px;
+    z-index: 3;
+  }
+  .welcome-about .welcome-title .welcome-title-main .welcome-img {
+    width: 90%;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    z-index: 2;
+  }
+  .welcome-about .welcome-title .welcome-title-sub {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  .welcome-about .welcome-title .welcome-title-sub h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'DM Serif Display', serif;
+  }
+  .welcome-about .welcome-title .welcome-title-sub p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 5%;
+  }
+  .welcome-about .welcome-title .welcome-title-sub a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+    height: 50px;
+    font-size: 1rem;
+    color: #fff;
+    background: #111;
+  }
+  .welcome-about .welcome-contents {
+    width: 100%;
+    padding: 10vh 20px;
+    background: #eee;
+  }
+  .welcome-about .welcome-contents h2 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  .welcome-about .welcome-contents > p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+    color: #777;
+  }
+  .welcome-about .welcome-contents .welcome-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .welcome-about .welcome-contents .welcome-btn a {
+    display: inline-block;
+  }
+  .welcome-about .welcome-contents .welcome-btn a figure {
+    width: 100%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #fff;
+    margin-bottom: 5%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #333;
+    color: #111;
+  }
+  .welcome-about .welcome-contents .welcome-btn a figure > p {
+    width: 25%;
+    height: 100%;
+    border-left: 1px solid #333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.5rem;
+    background: #aaa;
+    color: #fff;
+  }
+  .welcome-about .welcome-contents .welcome-btn a figure > p::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: url("../src/img/icon/arrowdown.png") center center/cover;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  .welcome-about .welcome-contents .welcome-btn a figure figcaption {
+    width: 68%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 5%;
+  }
+  .welcome-about .welcome-contents .welcome-btn a figure figcaption h4 {
+    font-size: 1rem;
+    white-space: nowrap;
+    padding-bottom: 5%;
+  }
+  .welcome-about .welcome-contents .welcome-btn a figure figcaption .arrow {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    display: none;
+  }
+  .welcome-about .welcome-contents .welcome-btn a figure figcaption p {
+    font-size: 0.6rem;
+    position: relative;
+  }
+  .welcome-portfolio {
+    width: 100%;
+    margin: 5% 0;
+    padding: 0 20px;
+  }
+  .welcome-portfolio h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1%;
+  }
+  .welcome-portfolio > p {
+    font-size: 0.8rem;
+    color: #555;
+    margin-bottom: 15%;
+  }
+  .welcome-portfolio .portfolio-list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .welcome-portfolio .portfolio-list .portfolio-card {
+    width: 100%;
+    margin-bottom: 10%;
+    margin-right: 3%;
+  }
+  .welcome-portfolio .portfolio-list .portfolio-card figure {
+    width: 100%;
+    height: 100%;
+  }
+  .welcome-portfolio .portfolio-list .portfolio-card figure .portfolio-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 5%;
+  }
+  .welcome-portfolio .portfolio-list .portfolio-card figure figcaption {
+    width: 100%;
+  }
+  .welcome-portfolio .portfolio-list .portfolio-card figure figcaption p:nth-of-type(1) {
+    font-size: 1.5rem;
+    margin-bottom: 1%;
+  }
+  .welcome-portfolio .portfolio-list .portfolio-card figure figcaption p:nth-of-type(2) {
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 5%;
+  }
+  .welcome-portfolio .portfolio-list .portfolio-card figure .portfolio-more {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 0.8rem;
+    padding: 2%;
+    border: 1px solid #333;
+  }
+}
+/*# sourceMappingURL=welcome.css.map */

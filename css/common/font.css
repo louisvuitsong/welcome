@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+/* font-family: 'Noto Serif KR', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+
+/* font-family: 'DM Serif Display', serif; */
+
+@font-face {
+
+    font-family:'NanumGothic';
+
+    src: url('../../src/fonts/NanumBarunGothic.ttf'),
+         url('../../src/fonts/NanumBarunGothicBold.ttf'),
+         url('../../src/fonts/NanumBarunGothicLight.ttf'),
+         url('../../src/fonts/NanumBarunGothicUltraLight.ttf');
+
+}
+
+@font-face {
+
+    font-family:'NanumSquare';
+
+    src: url('../../src/fonts/NanumSquareRegular.ttf'),
+         url('../../src/fonts/NanumSquareBold.ttf'),
+         url('../../src/fonts/NanumSquareExtraBold.ttf'),
+         url('../../src/fonts/NanumSquareLight.ttf');
+
+}

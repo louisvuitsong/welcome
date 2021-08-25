@@ -1,0 +1,18 @@
+@import url(common/common.css);
+
+//PC
+@media (min-width: 481px) {
+
+    @import 'pc/header';
+    @import 'pc/about';
+    @import 'pc/portfolio';
+}
+
+//Mobile
+@media (max-width: 480px) {
+    
+    @import 'mobile/header480';
+    @import 'mobile/about480';
+    @import 'mobile/portfolio480';
+}
+
